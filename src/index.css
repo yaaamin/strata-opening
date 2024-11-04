@@ -1,0 +1,37 @@
+@import "https://unpkg.com/open-props";
+
+@font-face {
+  font-family: "Mv Eamaan XP";
+  src: url("MvEamaanXP.woff2") format("woff2"),
+    url("MvEamaanXP.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dv {
+  font-family: "Mv Eamaan XP";
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slowed {
+  animation: spin 10s linear infinite;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
